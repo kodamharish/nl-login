@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}sign in {% endblock %}
+{% block content %}
+<div class="row">
+    <div class="mt-4">
+        <button class="btn btn-outline-dark w-100 mb-2">
+            <a href="{% url 'social:begin' 'google-oauth2' %}">
+                <i class="fab fa-google me-2"></i> Login with Google
+            </a>
+        </button>
+        <button class="btn btn-outline-dark w-100 mb-2">
+            <a href="{% url 'social:begin' 'facebook-oauth2' %}">
+                <i class="fab fa-facebook-f me-2"></i> Login with Facebook
+            </a>
+        </button>
+        <button class="btn btn-outline-dark w-100 mt-2">
+          <a href="{% url 'social:begin' 'linkedin-oauth2' %}">
+              <i class="fab fa-linkedin-in"></i> Login with Linkedin
+          </a>
+      </button>
+    </div>
+</div>
+{% endblock %}

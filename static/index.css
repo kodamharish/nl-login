@@ -1,0 +1,42 @@
+.container-fluid{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid > div{
+    width: 85%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.card{
+    width:100%;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures the link color matches the button text color */
+}
+
+a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn i {
+    margin-right: 8px; /* Adds some space between the icon and text */
+}
